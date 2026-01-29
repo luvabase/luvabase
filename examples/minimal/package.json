@@ -1,10 +1,10 @@
 {
-  "name": "lumobase-example-minimal",
+  "name": "luva-example-minimal",
   "private": true,
   "scripts": {
-    "build:lumo": "rm -rf dist && npm run wrangler-dry-build && cp lumobase.jsonc dist/ && cp -r public dist/public && npm run make-app",
+    "build:luva": "rm -rf dist && npm run wrangler-dry-build && cp luva.jsonc dist/ && cp -r public dist/public && npm run make-app",
     "wrangler-dry-build": "wrangler deploy --dry-run --bundle --outdir dist",
-    "make-app": "cd dist && zip -r ./app.lumo . && mv ./app.lumo ../ && cd .. && rm -rf dist"
+    "make-app": "cd dist && zip -r ./app.luva . && mv ./app.luva ../ && cd .. && rm -rf dist"
   },
   "devDependencies": {
     "wrangler": "^4.14.4"

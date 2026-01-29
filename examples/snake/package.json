@@ -2,9 +2,9 @@
   "name": "snake",
   "version": "1.0.0",
   "scripts": {
-    "clean": "rm -rf dist && rm -f snake.lumo",
-    "dist": "npm run clean && mkdir dist && cp -r lumobase.jsonc icon.png public dist/",
-    "build:lumo": "npm run dist && cd dist && zip -r ../snake.lumo .",
+    "clean": "rm -rf dist && rm -f snake.luva",
+    "dist": "npm run clean && mkdir dist && cp -r luva.jsonc icon.png public dist/",
+    "build:luva": "npm run dist && cd dist && zip -r ../snake.luva .",
     "dev": "vite dev"
   },
   "devDependencies": {

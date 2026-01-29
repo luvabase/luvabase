@@ -8,8 +8,8 @@ const packageJson = JSON.parse(
 )
 
 program
-  .name("lumobase")
-  .description("Command line tool for Lumobase")
+  .name("luva")
+  .description("Command line tool for Luvabase")
   .version(packageJson.version)
 
 program

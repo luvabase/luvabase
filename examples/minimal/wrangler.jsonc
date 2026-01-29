@@ -1,5 +1,5 @@
 {
-  "name": "lumo-example-bare",
+  "name": "example-bare",
   "compatibility_date": "2025-05-15",
   "compatibility_flags": ["nodejs_compat"],
   "main": "index.js",
