@@ -7,7 +7,6 @@ node_modules
 .pnp.js
 
 .dev.vars
-.prod.vars
 
 # testing
 /coverage
