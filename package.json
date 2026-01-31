@@ -1,12 +1,13 @@
 {
-  "name": "lumopods",
-  "version": "0.0.3",
+  "name": "@luvabase/cli",
+  "version": "0.0.1",
   "type": "module",
   "license": "MIT",
-  "description": "Install cloud apps as easy as mobile apps",
+  "description": "Command line tool for Luvabase",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm --no-git-tag-version version patch && npm run build"
+    "publish": "npm run new-version && npm run build && npm publish --access=public",
+    "new-version": "npm --no-git-tag-version version patch"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.3.8",
