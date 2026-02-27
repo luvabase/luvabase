@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "types": ["node"],
+    "outDir": "./dist"
+  }
+}
