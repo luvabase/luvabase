@@ -1,0 +1,11 @@
+{
+  "name": "Snake",
+  "subtitle": "Play the classic of classics",
+  "icon": "icon.png",
+  "services": [
+    {
+      "binding": "MAINDB",
+      "type": "cloudflare-kv",
+    },
+  ],
+}

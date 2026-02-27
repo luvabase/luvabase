@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/@luvabase/sdk/dist/manifest-schema.json",
+  "name": "Minimal App",
+  "subtitle": "Minimal Luvabase example app",
+  "icon": "./public/icon.png",
+}

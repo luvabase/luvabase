@@ -9,7 +9,8 @@
     }
   },
   "scripts": {
-    "build": "tsdown src/index.ts"
+    "generate-manifest-json-schema": "bun -e \"import * as t from './tools/tools'; t.generateManifestJsonSchema()\"",
+    "build": "tsdown src/index.ts && bun run generate-manifest-json-schema"
   },
   "devDependencies": {
     "tsdown": "^0.21.0-beta.2"

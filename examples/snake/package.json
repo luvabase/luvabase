@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/@luvabase/sdk/dist/manifest-schema.json",
+  "name": "snake",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf dist && rm -f snake.luva",
+    "dist": "npm run clean && mkdir dist && cp -r luva.jsonc icon.png public dist/",
+    "build:luva": "npm run dist && cd dist && zip -r ../snake.luva .",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "@luvabase/sdk": "^0.0.1",
+    "vite": "^6.3.5"
+  }
+}

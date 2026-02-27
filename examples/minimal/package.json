@@ -1,0 +1,13 @@
+{
+  "name": "luva-example-minimal",
+  "private": true,
+  "scripts": {
+    "build:luva": "rm -rf dist && npm run wrangler-dry-build && cp luva.jsonc dist/ && cp -r public dist/public && npm run make-app",
+    "wrangler-dry-build": "wrangler deploy --dry-run --bundle --outdir dist",
+    "make-app": "cd dist && zip -r ./app.luva . && mv ./app.luva ../ && cd .. && rm -rf dist"
+  },
+  "devDependencies": {
+    "@luvabase/sdk": "^0.0.1",
+    "wrangler": "^4.14.4"
+  }
+}
